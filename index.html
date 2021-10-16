@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body id="body">
+    <div id="container">
+        <div id="game">
+            <div class="row">
+                <div class="box topBox" style="width: 1.3rem;" onclick="putIcon(0); checkWinner()"> 
+                    <div class="icon"></div>
+                </div> 
+                <div class="box centralBox topBox" onclick="putIcon(1); checkWinner()">  
+                    <div class="icon"></div>
+                </div> 
+                <div class="box topBox" onclick="putIcon(2); checkWinner()"> 
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box topBox" style="width: 1.3rem;" onclick="putIcon(3); checkWinner()"> 
+                    <div class="icon"></div>
+                </div> 
+                <div class="box centralBox topBox" onclick="putIcon(4); checkWinner()">  
+                    <div class="icon"></div>
+                </div> 
+                <div class="box topBox" onclick="putIcon(5); checkWinner()"> 
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box" style="width: 1.3rem;" onclick="putIcon(6); checkWinner()"> 
+                    <div class="icon"></div>
+                </div> 
+                <div class="box centralBox" onclick="putIcon(7); checkWinner()">  
+                    <div class="icon"></div>
+                </div> 
+                <div class="box" onclick="putIcon(8); checkWinner()"> 
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
