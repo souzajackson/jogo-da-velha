@@ -3,7 +3,7 @@ var icon = document.getElementsByClassName('icon')
 var square = document.getElementsByClassName('box')
 function putIcon(n){
     var OnClickSong = new Audio()
-    OnClickSong.src = '../sons/Efeito-Sonoro-Clique.mp3'
+    OnClickSong.src = './sons/Efeito-Sonoro-Clique.mp3'
     OnClickSong.play()
     if(numberOfIconsOnTheBoarder % 2 == 0){
         icon[n].innerText = 'X'
@@ -17,7 +17,7 @@ function putIcon(n){
 }
 function winnerDisplay(square1, square2, square3, winner){
     var WinnerSong = new Audio()
-    WinnerSong.src = '../sons/Efeito-Sonoro-Vitória.mp3'
+    WinnerSong.src = './sons/Efeito-Sonoro-Vitória.mp3'
     WinnerSong.play()
     var result = document.createElement(result)
     result.innerHTML = `<h1>O jogador usando o ícone ${winner} Venceu!</h1>
